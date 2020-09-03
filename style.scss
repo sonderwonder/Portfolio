@@ -84,7 +84,7 @@ main {
     }
     #view_options {
         @include flex_box();
-        width: 140px;
+        width: fit-content;
         a {
             margin: 6px;  
         }
@@ -118,5 +118,17 @@ main {
                 }
 
             }
+    }
+
+}
+.skills_pg {
+    
+    #skills_icons {
+        @include flex_box();
+        width: fit-content;
+        a {
+            margin: 6px;
+        }
+
     }
 }
