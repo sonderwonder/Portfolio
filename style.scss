@@ -26,12 +26,36 @@ body {
     background-size: cover;
     }
 
+nav {
+    margin: auto;
+    width: fit-content;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    
+    
+    #topbot {
+        transform: translate(0px, 20px)
+    }
+    #pg {
+        @include headings();
+        text-decoration: none;
+        padding: 7px;
+
+
+    }
+}
+
 .home_pg {
+    margin: auto;
+    max-width: 800px;
+    text-align: right;
     h2 {
         @include headings();
     }
     p {
         @include paragraphs();
+        
     }
     a {
         text-decoration: none;
@@ -41,6 +65,9 @@ body {
 
 
 main {
+    max-width: 800px;
+    margin: auto;
+    
     h1 {
         @include headings();
     }
@@ -55,6 +82,16 @@ main {
 
     p {
         @include paragraphs();
+    }
+}
+
+.about_me_pg {
+    #about_box {
+        justify-content: center;
+        border: 2px solid white;
+        p {
+            padding: 15px;
+        }
     }
 }
 
@@ -80,7 +117,7 @@ main {
 
 .projects_pg {
     h1 {
-        display: inline;
+        
     }
     #view_options {
         @include flex_box();

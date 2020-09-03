@@ -4,29 +4,56 @@ body {
   background-attachment: fixed;
   background-size: cover; }
 
-.home_pg h2 {
-  font-family: "Poppins", sans-serif;
-  color: white; }
-.home_pg p {
-  font-family: "Raleway", sans-serif;
-  color: white; }
-.home_pg a {
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  color: white; }
+nav {
+  margin: auto;
+  width: fit-content;
+  position: sticky;
+  top: 0;
+  padding: 20px; }
+  nav #topbot {
+    transform: translate(0px, 20px); }
+  nav #pg {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 7px; }
 
-main h1 {
-  font-family: "Poppins", sans-serif;
-  color: white; }
-main h3 {
-  font-family: "Poppins", sans-serif;
-  color: white; }
-main h4 {
-  font-family: "Poppins", sans-serif;
-  color: white; }
-main p {
-  font-family: "Raleway", sans-serif;
-  color: white; }
+.home_pg {
+  margin: auto;
+  max-width: 800px;
+  text-align: right; }
+  .home_pg h2 {
+    font-family: "Poppins", sans-serif;
+    color: white; }
+  .home_pg p {
+    font-family: "Raleway", sans-serif;
+    color: white; }
+  .home_pg a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: white; }
+
+main {
+  max-width: 800px;
+  margin: auto; }
+  main h1 {
+    font-family: "Poppins", sans-serif;
+    color: white; }
+  main h3 {
+    font-family: "Poppins", sans-serif;
+    color: white; }
+  main h4 {
+    font-family: "Poppins", sans-serif;
+    color: white; }
+  main p {
+    font-family: "Raleway", sans-serif;
+    color: white; }
+
+.about_me_pg #about_box {
+  justify-content: center;
+  border: 2px solid white; }
+  .about_me_pg #about_box p {
+    padding: 15px; }
 
 .socials_pg #sociallink_cont {
   display: flex;
@@ -45,8 +72,6 @@ main p {
   width: 500px;
   height: 650px; }
 
-.projects_pg h1 {
-  display: inline; }
 .projects_pg #view_options {
   display: flex;
   flex-wrap: wrap;
