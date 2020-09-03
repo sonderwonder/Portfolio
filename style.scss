@@ -1,0 +1,21 @@
+$h_font: 'Poppins', sans-serif;
+$p_font: 'Raleway', sans-serif;
+
+@mixin headings {
+    font-family: $h_font;
+    color: white;
+    
+}
+
+.home_pg {
+    h2 {
+        font-family: $h_font;
+        color: white;
+    }
+}
+
+main {
+    h1 {
+        @include headings();
+    }
+}
