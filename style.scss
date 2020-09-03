@@ -45,6 +45,14 @@ main {
         @include headings();
     }
 
+    h3 {
+        @include headings(); 
+    }
+
+    h4 {
+        @include headings(); 
+    }
+
     p {
         @include paragraphs();
     }
@@ -67,5 +75,48 @@ main {
         width: 500px;
         height: 650px;
         
+    }
+}
+
+.projects_pg {
+    h1 {
+        display: inline;
+    }
+    #view_options {
+        @include flex_box();
+        width: 140px;
+        a {
+            margin: 6px;  
+        }
+    }
+    article {
+        @include flex_box();
+        width: 500px;
+        height: 650px;
+            #project_card {
+                border: 1px solid white;
+                width: 150px;
+                height: 220px;
+            }
+            #project_listing {
+                border: 1px solid white;
+                height: 70px;
+                h3 {
+                    display: inline
+                }
+                h4 {
+                    display: inline
+                }
+                h3 {
+                    display: inline
+                }
+                p {
+                    display: inline
+                }
+                a {
+                    display: inline
+                }
+
+            }
     }
 }

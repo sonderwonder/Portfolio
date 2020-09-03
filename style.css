@@ -18,6 +18,12 @@ body {
 main h1 {
   font-family: "Poppins", sans-serif;
   color: white; }
+main h3 {
+  font-family: "Poppins", sans-serif;
+  color: white; }
+main h4 {
+  font-family: "Poppins", sans-serif;
+  color: white; }
 main p {
   font-family: "Raleway", sans-serif;
   color: white; }
@@ -38,5 +44,38 @@ main p {
   border: 1px solid white;
   width: 500px;
   height: 650px; }
+
+.projects_pg h1 {
+  display: inline; }
+.projects_pg #view_options {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  width: 140px; }
+  .projects_pg #view_options a {
+    margin: 6px; }
+.projects_pg article {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  width: 500px;
+  height: 650px; }
+  .projects_pg article #project_card {
+    border: 1px solid white;
+    width: 150px;
+    height: 220px; }
+  .projects_pg article #project_listing {
+    border: 1px solid white;
+    height: 70px; }
+    .projects_pg article #project_listing h3 {
+      display: inline; }
+    .projects_pg article #project_listing h4 {
+      display: inline; }
+    .projects_pg article #project_listing h3 {
+      display: inline; }
+    .projects_pg article #project_listing p {
+      display: inline; }
+    .projects_pg article #project_listing a {
+      display: inline; }
 
 /*# sourceMappingURL=style.css.map */
