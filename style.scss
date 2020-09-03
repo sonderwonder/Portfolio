@@ -53,15 +53,19 @@ main {
 .socials_pg {
     #sociallink_cont {
         @include flex_box();
-        width: 320px;
+        width: 340px;
         height: 150px;
         padding: 0px;
         margin: 0;
 
-        img {
-            color: white;
+        a {
+            margin: 6px;
         }
-
-    
+    }
+    aside {
+        @include flex_box();
+        width: 500px;
+        height: 650px;
+        
     }
 }

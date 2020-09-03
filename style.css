@@ -26,11 +26,17 @@ main p {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid white;
-  width: 320px;
+  width: 340px;
   height: 150px;
   padding: 0px;
   margin: 0; }
-  .socials_pg #sociallink_cont img {
-    color: white; }
+  .socials_pg #sociallink_cont a {
+    margin: 6px; }
+.socials_pg aside {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  width: 500px;
+  height: 650px; }
 
 /*# sourceMappingURL=style.css.map */
