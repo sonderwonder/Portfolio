@@ -12,6 +12,20 @@ $p_font: 'Raleway', sans-serif;
     color: white;
 }
 
+@mixin flex_box {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+
+}
+
+body {
+    background-image: url(./Assests/img/The_Creation_of_Adam.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+
 .home_pg {
     h2 {
         @include headings();
@@ -33,5 +47,21 @@ main {
 
     p {
         @include paragraphs();
+    }
+}
+
+.socials_pg {
+    #sociallink_cont {
+        @include flex_box();
+        width: 320px;
+        height: 150px;
+        padding: 0px;
+        margin: 0;
+
+        img {
+            color: white;
+        }
+
+    
     }
 }
