@@ -7,15 +7,31 @@ $p_font: 'Raleway', sans-serif;
     
 }
 
+@mixin paragraphs {
+    font-family: $p_font;
+    color: white;
+}
+
 .home_pg {
     h2 {
-        font-family: $h_font;
-        color: white;
+        @include headings();
+    }
+    p {
+        @include paragraphs();
+    }
+    a {
+        text-decoration: none;
+        @include paragraphs();
     }
 }
+
 
 main {
     h1 {
         @include headings();
+    }
+
+    p {
+        @include paragraphs();
     }
 }

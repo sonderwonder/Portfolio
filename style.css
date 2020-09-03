@@ -1,9 +1,19 @@
 .home_pg h2 {
   font-family: "Poppins", sans-serif;
   color: white; }
+.home_pg p {
+  font-family: "Raleway", sans-serif;
+  color: white; }
+.home_pg a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: white; }
 
 main h1 {
   font-family: "Poppins", sans-serif;
+  color: white; }
+main p {
+  font-family: "Raleway", sans-serif;
   color: white; }
 
 /*# sourceMappingURL=style.css.map */
