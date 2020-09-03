@@ -147,3 +147,20 @@ main {
         height: 650px;
     }
 }
+
+.contact_me_pg {
+    #submit_c {
+        display: inline-block;
+        color: white;
+    }
+    #message_c {
+        display: inline;
+        label { 
+            color: white;
+            display: inline;
+        }
+        input {
+            display: block;
+        }
+    }
+}

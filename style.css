@@ -100,4 +100,15 @@ main p {
   width: 500px;
   height: 650px; }
 
+.contact_me_pg #submit_c {
+  display: inline-block;
+  color: white; }
+.contact_me_pg #message_c {
+  display: inline; }
+  .contact_me_pg #message_c label {
+    color: white;
+    display: inline; }
+  .contact_me_pg #message_c input {
+    display: block; }
+
 /*# sourceMappingURL=style.css.map */

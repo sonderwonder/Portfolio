@@ -177,22 +177,27 @@
 
             <a id="contact_me_anc"><h1>Contact Me</h1></a>
 
-            <div class="tooltip_info">Hover over me
+            <!--commented out until i start working on tooltips
+            <div class="tooltip">Hover over me
                 <span class="tooltiptext">Tooltip text</span>
-            </div>
+            </div>-->
 
             <form action="https://formspree.io/xnqgkbgk"
             method="POST"
             >
+            <div id="submit_c">
                 <input id="form-submit" type="submit">
                 <input type="checkbox" id="email_copy" name="email_copy" value="confirm">
-                <label for="email_copy"> Send refrence copy to my email</label>     
+                <label for="email_copy"> Send refrence copy to my email</label> 
+            </div>   
+            <div id="message_c">
                 <label for="email">Email:</label>
                 <input type="text" name="email">
                 <label for="name">Name:</label>
                 <input type="text" name="name">
                 <label for="name">Message:</label>
                 <input type="text" name="message">
+            </div>  
 
             </form>
                        
