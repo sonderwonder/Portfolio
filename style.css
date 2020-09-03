@@ -86,4 +86,18 @@ main p {
   .skills_pg #skills_icons a {
     margin: 6px; }
 
+.resume_pg .resume_opt {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  width: fit-content; }
+  .resume_pg .resume_opt #resume_opt {
+    color: white; }
+.resume_pg article {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  width: 500px;
+  height: 650px; }
+
 /*# sourceMappingURL=style.css.map */

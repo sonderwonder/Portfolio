@@ -132,3 +132,18 @@ main {
 
     }
 }
+
+.resume_pg {
+    .resume_opt {
+        @include flex_box();
+        width: fit-content;
+        #resume_opt {
+            color: white;
+        }
+    }
+    article {
+        @include flex_box();
+        width: 500px;
+        height: 650px;
+    }
+}
