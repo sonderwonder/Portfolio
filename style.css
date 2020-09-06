@@ -24,16 +24,24 @@ nav {
   margin-bottom: 300px;
   max-width: 800px;
   text-align: right; }
-  .home_pg #sonder h2 {
-    font-family: "Poppins", sans-serif;
-    color: white; }
-  .home_pg #sonder p {
-    font-family: "Raleway", sans-serif;
-    color: white; }
-  .home_pg #sonder a {
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    color: white; }
+  .home_pg #sonder {
+    padding: 10px;
+    padding-bottom: 30px;
+    border: 1px solid white;
+    background-color: grey;
+    opacity: 0.4; }
+    .home_pg #sonder #sonder_cont {
+      opacity: none; }
+      .home_pg #sonder #sonder_cont h2 {
+        font-family: "Poppins", sans-serif;
+        color: white; }
+      .home_pg #sonder #sonder_cont p {
+        font-family: "Raleway", sans-serif;
+        color: white; }
+      .home_pg #sonder #sonder_cont a {
+        text-decoration: none;
+        font-family: "Raleway", sans-serif;
+        color: white; }
 
 main {
   max-width: 800px;
@@ -52,8 +60,10 @@ main {
     color: white; }
 
 .about_me_pg #about_box {
-  justify-content: center;
-  border: 2px solid white; }
+  padding: 10px;
+  border: 1px solid white;
+  background-color: grey;
+  opacity: 0.4; }
   .about_me_pg #about_box p {
     padding: 15px; }
 
