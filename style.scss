@@ -5,7 +5,7 @@ $card_shadow: #9a8c82;
 
 @mixin headings {
     font-family: $h_font;
-    color:  #e5e2dd;
+    color:  #927778;
 }
 
 @mixin paragraphs {
@@ -26,29 +26,39 @@ body {
         position: fixed;
         top: 0; left: 0;
         width: 100%; height: 100%;
+        z-index: -1;
     }
     background-image: url(./Assests/img/The_Creation_of_Adam.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    z-index: -2;
     
     
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    width: fit-content;
+    width: auto;
+    float: none;
     position: sticky;
+    background-image: linear-gradient(#9a8c82, #00000000);
+    height: 40px;
+    opacity: 0.9;
     top: 0;
     padding: 20px;
+    z-index: 2;
     
     
     #topbot {
         #home {
-            transform: translate(-10px, 12px)
+            transform: translate(-10px, 0px)
         }
         #bottom {
-            transform: translate(10px, 12px)
+            transform: translate(10px, 0px)
         }
     }
 
@@ -56,6 +66,7 @@ nav {
         @include headings();
         text-decoration: none;
         padding: 7px;
+        color: #7E838B;
 
 
     }
@@ -122,6 +133,19 @@ main {
 
     hr {
         margin-top: 50px;
+        border: 2px solid #BBAFA0;
+        border-radius: 2px;
+        opacity: 0.5;
+        box-shadow: 5px 10px 18px $card_shadow;
+    }
+
+    a {
+        @include paragraphs()
+    }
+
+    label {
+        @include paragraphs();
+        color: #e5e2dd;
     }
 }
 
@@ -144,7 +168,8 @@ main {
    #social_cont {
         display: flex;
         flex-wrap: wrap;
-        align-items: flex-start;;
+        align-items: flex-start;
+        justify-content: center;
         width: fit-content;
         margin: auto;
     
@@ -160,6 +185,7 @@ main {
             background-color: $card_color;
             opacity: 0.7;
             box-shadow: 5px 10px 18px $card_shadow;
+            margin: 10px;
 
             a {
                 margin: 6px;
@@ -176,7 +202,7 @@ main {
             background-color: $card_color;
             box-shadow: 5px 10px 18px $card_shadow;
             opacity: 0.7;
-            margin: 0px 10px;
+            margin: 10px;
             width: 500px;
             height: 600px;
             
@@ -315,10 +341,12 @@ main {
         display: flex ;
         width: fit-content;
         float: right;
+        transform: translate(-129px, 0px);
 
         a {
-        color: white;
-        padding: 6px;
+            text-decoration: none;
+            color: white;
+            padding: 6px;
         }
     }
 
@@ -330,6 +358,7 @@ main {
         .resume_viewer{ 
 
             @include flex_box();
+            border: none;
             width: fit-content;
             height: fit-content;
 
@@ -344,6 +373,13 @@ main {
             }
             #resume_viewer {
                 @include flex_box();
+                @include flex_box();
+                border: none;
+                border-radius: 8px;
+                background-color: $card_color;
+                box-shadow: 5px 10px 18px $card_shadow;
+                opacity: 0.7;
+                margin: 10px;
                 width: 500px;
                 height: 650px;
             }
@@ -356,24 +392,73 @@ main {
 
     .contact_me_cont{
         display: flex;
-        justify-content: space-around;
-        max-width: 600px;;
-        margin: auto;
-        border: 1px solid white;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        max-width: 1000px;;
+        margin: 300px auto;
+        
 
 
 
         #submit_c {
-            display: inline-block;
+            display: inline-flex;
+            flex-direction: column;
+            vertical-align: middle;
+            max-width: 500px;
             color: white;
+            margin: auto;
+            input[type=submit] {
+                display: inline ;
+                text-rendering: white;
+                justify-content: center;
+                background-color: $card_color;
+                box-shadow: 5px 10px 18px $card_shadow;
+                margin: 10px;
+                border: none;
+                border-radius: 3px;
+                opacity: 0.7;
+            }
+
+            label {
+                display: inline ;
+            
+                input[type=checkbox] {
+                    display: inline ;
+                    background-color: $card_color;
+                    box-shadow: 5px 10px 18px $card_shadow;
+                    transform: translate(4px, 5px);
+                    margin: 10px;
+                    border: none;
+                    border-radius: 3px;
+                    opacity: 0.7;
+                }
+            }
+
+            label {
+                display: inline ;
+            }
         }
         #message_c {
             display: inline-block;
-            label { 
-                color: white;
+            margin: 0px 20px;
+            
+            #message {
+                height: 150px;
+                width: 340px;
             }
-            input {
+            input[type=text] {
+                @include paragraphs();
                 display: block;
+                background-color: $card_color;
+                box-shadow: 5px 10px 18px $card_shadow;
+                width: 340px;
+                padding-left: 5px;
+                margin: 10px;
+                border: none;
+                border-radius: 3px;
+                opacity: 0.7;
+                height: 20px;
             }
         }
     }
