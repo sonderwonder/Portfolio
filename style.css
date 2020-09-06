@@ -10,8 +10,10 @@ nav {
   position: sticky;
   top: 0;
   padding: 20px; }
-  nav #topbot {
-    transform: translate(0px, 20px); }
+  nav #topbot #home {
+    transform: translate(-10px, 12px); }
+  nav #topbot #bottom {
+    transform: translate(10px, 12px); }
   nav #pg {
     font-family: "Poppins", sans-serif;
     color: white;

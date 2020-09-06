@@ -33,8 +33,14 @@ nav {
     
     
     #topbot {
-        transform: translate(0px, 20px)
+        #home {
+            transform: translate(-10px, 12px)
+        }
+        #bottom {
+            transform: translate(10px, 12px)
+        }
     }
+    
     #pg {
         @include headings();
         text-decoration: none;
