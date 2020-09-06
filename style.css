@@ -44,7 +44,7 @@ nav {
         color: white; }
 
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto; }
   main h1 {
     font-family: "Poppins", sans-serif;
@@ -67,56 +67,74 @@ main {
   .about_me_pg #about_box p {
     padding: 15px; }
 
-.socials_pg #sociallink_cont {
+.socials_pg #social_cont {
   display: flex;
-  flex-wrap: wrap;
-  border: 1px solid white;
-  width: 340px;
-  height: 150px;
-  padding: 0px;
-  margin: 0; }
-  .socials_pg #sociallink_cont a {
-    margin: 6px; }
-.socials_pg aside {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid white;
-  width: 500px;
-  height: 650px; }
+  width: fit-content;
+  margin: auto; }
+  .socials_pg #social_cont #sociallink_cont {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    width: fit-content;
+    max-width: 300px;
+    height: 150px;
+    padding: 0px;
+    margin: 0; }
+    .socials_pg #social_cont #sociallink_cont a {
+      margin: 6px; }
+      .socials_pg #social_cont #sociallink_cont a img {
+        max-width: 60px; }
+  .socials_pg #social_cont aside {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    width: 500px;
+    height: 600px; }
 
-.projects_pg #view_options {
+.projects_pg #dir_button #left {
+  transform: translate(0px, 430px); }
+.projects_pg #dir_button #right {
+  transform: translate(820px, -766px); }
+.projects_pg #projects_cont {
   display: flex;
-  flex-wrap: wrap;
-  border: 1px solid white;
-  width: fit-content; }
-  .projects_pg #view_options a {
-    margin: 6px; }
-.projects_pg article {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid white;
-  width: 500px;
-  height: 650px; }
-  .projects_pg article #project_card {
+  flex-flow: column wrap-reverse;
+  width: fit-content;
+  margin: auto; }
+  .projects_pg #projects_cont #view_options {
+    display: inline-flex;
+    flex-wrap: wrap;
     border: 1px solid white;
-    width: 150px;
-    height: 220px; }
-  .projects_pg article #project_listing {
+    height: fit-content;
+    width: fit-content; }
+    .projects_pg #projects_cont #view_options a {
+      margin: 6px; }
+  .projects_pg #projects_cont #project_viewer {
+    display: inline-flex;
+    flex-wrap: wrap;
     border: 1px solid white;
-    height: 70px; }
-    .projects_pg article #project_listing h3 {
-      display: inline; }
-    .projects_pg article #project_listing h4 {
-      display: inline; }
-    .projects_pg article #project_listing h3 {
-      display: inline; }
-    .projects_pg article #project_listing p {
-      display: inline; }
-    .projects_pg article #project_listing a {
-      display: inline; }
+    width: 500px;
+    height: 650px;
+    flex-direction: column; }
+    .projects_pg #projects_cont #project_viewer #project_card {
+      border: 1px solid white;
+      width: 150px;
+      height: 220px; }
+    .projects_pg #projects_cont #project_viewer #project_listing {
+      border: 1px solid white;
+      height: 70px; }
+      .projects_pg #projects_cont #project_viewer #project_listing h3 {
+        display: inline; }
+      .projects_pg #projects_cont #project_viewer #project_listing h4 {
+        display: inline; }
+      .projects_pg #projects_cont #project_viewer #project_listing h3 {
+        display: inline; }
+      .projects_pg #projects_cont #project_viewer #project_listing p {
+        display: inline; }
+      .projects_pg #projects_cont #project_viewer #project_listing a {
+        display: inline; }
 
 .skills_pg #skills_icons {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   border: 1px solid white;
   width: fit-content; }
@@ -124,14 +142,14 @@ main {
     margin: 6px; }
 
 .resume_pg .resume_opt {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   border: 1px solid white;
   width: fit-content; }
   .resume_pg .resume_opt #resume_opt {
     color: white; }
 .resume_pg article {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   border: 1px solid white;
   width: 500px;

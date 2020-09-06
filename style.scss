@@ -12,7 +12,7 @@ $p_font: 'Raleway', sans-serif;
 }
 
 @mixin flex_box {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     border: 1px solid white;
 }
@@ -78,7 +78,7 @@ nav {
 
 
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     
     h1 {
@@ -111,65 +111,97 @@ main {
 }
 
 .socials_pg {
-    #sociallink_cont {
-        @include flex_box();
-        width: 340px;
-        height: 150px;
-        padding: 0px;
-        margin: 0;
+   
+   #social_cont {
+        display: flex;
+        width: fit-content;
+        margin: auto;
+    
+        #sociallink_cont {
+            @include flex_box();
+            
+            width: fit-content;
+            max-width: 300px;
+            height: 150px;
+            padding: 0px;
+            margin: 0;
 
-        a {
-            margin: 6px;
+            a {
+                margin: 6px;
+                img {
+                    max-width: 60px;
+                }
+            }
         }
-    }
 
-    aside {
-        @include flex_box();
-        width: 500px;
-        height: 650px;
-        
-    }
+        aside {
+            @include flex_box();
+            width: 500px;
+            height: 600px;
+            
+        }
+   }
 }
 
 .projects_pg {
 
-    #view_options {
-        @include flex_box();
-        width: fit-content;
-        a {
-            margin: 6px;  
+    #dir_button{
+
+        #left{
+            transform: translate(0px, 430px);
+        }
+        #right {
+            transform: translate(820px, -766px);
         }
     }
 
-    article {
-        @include flex_box();
-        width: 500px;
-        height: 650px;
+    #projects_cont {
+        display: flex;
+        flex-flow: column wrap-reverse;
+        width: fit-content;
+        margin: auto;
 
-        #project_card {
-            border: 1px solid white;
-            width: 150px;
-            height: 220px;
-        }
-        #project_listing {
-            border: 1px solid white;
-            height: 70px;
-            h3 {
-                display: inline
-            }
-            h4 {
-                display: inline
-            }
-            h3 {
-                display: inline
-            }
-            p {
-                display: inline
-            }
+        #view_options {
+            @include flex_box();
+            height: fit-content;
+            width: fit-content;
             a {
-                display: inline
+                margin: 6px;  
             }
+        }
 
+        #project_viewer{
+            @include flex_box();
+            width: 500px;
+            height: 650px;
+            flex-direction: column;
+
+            #project_card {
+                border: 1px solid white;
+                width: 150px;
+                height: 220px;
+            }
+            #project_listing {
+
+                border: 1px solid white;
+                height: 70px;
+                h3 {
+                    display: inline
+                }
+                h4 {
+                    display: inline
+                }
+                h3 {
+                    display: inline
+                }
+                p {
+                    display: inline
+                }
+                a {
+                    display: inline
+                }
+
+            }
         }
     }
 
