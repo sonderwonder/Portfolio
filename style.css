@@ -145,8 +145,9 @@ main {
 .resume_pg #resume_opt {
   display: flex;
   width: fit-content; }
-  .resume_pg #resume_opt #resume_opt {
-    color: white; }
+  .resume_pg #resume_opt a {
+    color: white;
+    padding: 6px; }
 .resume_pg .resume_cont {
   width: fit-content;
   margin: auto; }
@@ -167,15 +168,20 @@ main {
       width: 500px;
       height: 650px; }
 
-.contact_me_pg #submit_c {
-  display: inline-block;
-  color: white; }
-.contact_me_pg #message_c {
-  display: inline; }
-  .contact_me_pg #message_c label {
-    color: white;
-    display: inline; }
-  .contact_me_pg #message_c input {
-    display: block; }
+.contact_me_pg .contact_me_cont {
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid white; }
+  .contact_me_pg .contact_me_cont #submit_c {
+    display: inline-block;
+    color: white; }
+  .contact_me_pg .contact_me_cont #message_c {
+    display: inline-block; }
+    .contact_me_pg .contact_me_cont #message_c label {
+      color: white; }
+    .contact_me_pg .contact_me_cont #message_c input {
+      display: block; }
 
 /*# sourceMappingURL=style.css.map */

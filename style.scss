@@ -230,11 +230,13 @@ main {
     #resume_opt {
         display: flex ;
         width: fit-content;
-        #resume_opt {
-            color: white;
+
+        a {
+        color: white;
+        padding: 6px;
         }
     }
-    
+
     .resume_cont{
 
         width: fit-content;
@@ -266,18 +268,28 @@ main {
 }
 
 .contact_me_pg {
-    #submit_c {
-        display: inline-block;
-        color: white;
-    }
-    #message_c {
-        display: inline;
-        label { 
+
+    .contact_me_cont{
+        display: flex;
+        justify-content: space-around;
+        max-width: 600px;;
+        margin: auto;
+        border: 1px solid white;
+
+
+
+        #submit_c {
+            display: inline-block;
             color: white;
-            display: inline;
         }
-        input {
-            display: block;
+        #message_c {
+            display: inline-block;
+            label { 
+                color: white;
+            }
+            input {
+                display: block;
+            }
         }
     }
     
