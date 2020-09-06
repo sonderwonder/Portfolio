@@ -114,6 +114,7 @@ main {
    
    #social_cont {
         display: flex;
+        flex-wrap: wrap;
         width: fit-content;
         margin: auto;
     
@@ -145,62 +146,66 @@ main {
 
 .projects_pg {
 
-    #dir_button{
-
-        #left{
-            transform: translate(0px, 430px);
-        }
-        #right {
-            transform: translate(820px, -766px);
+    #project_opt {
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+        a {
+            margin: 6px;  
         }
     }
 
-    #projects_cont {
-        display: flex;
-        flex-flow: column wrap-reverse;
+    .projects_cont{
+
         width: fit-content;
         margin: auto;
 
-        #view_options {
+        .project_viewer{
             @include flex_box();
-            height: fit-content;
             width: fit-content;
-            a {
-                margin: 6px;  
+            height: fit-content;
+            
+
+            #dir_button{
+
+                #left{
+                    transform: translate(0px, 300px);
+                }
+                #right {
+                    transform: translate(0px, 300px);
+                }
             }
-        }
+            #projects_viewer {
+                @include flex_box();
+                width: 500px;
+                height: 650px;
+            
+                #project_card {
+                    border: 1px solid white;
+                    width: 150px;
+                    height: 220px;
+                }
+                #project_listing {
 
-        #project_viewer{
-            @include flex_box();
-            width: 500px;
-            height: 650px;
-            flex-direction: column;
-
-            #project_card {
-                border: 1px solid white;
-                width: 150px;
-                height: 220px;
-            }
-            #project_listing {
-
-                border: 1px solid white;
-                height: 70px;
-                h3 {
-                    display: inline
+                    border: 1px solid white;
+                    height: 70px;
+                    h3 {
+                        display: inline
+                    }
+                    h4 {
+                        display: inline
+                    }
+                    h3 {
+                        display: inline
+                    }
+                    p {
+                        display: inline
+                    }
+                    a {
+                        display: inline
+                    }
+                    
                 }
-                h4 {
-                    display: inline
-                }
-                h3 {
-                    display: inline
-                }
-                p {
-                    display: inline
-                }
-                a {
-                    display: inline
-                }
-
             }
         }
     }
@@ -209,8 +214,10 @@ main {
 .skills_pg {
     
     #skills_icons {
-        @include flex_box();
+    
+        display: flex;
         width: fit-content;
+        margin: auto;
         a {
             margin: 6px;
         }
@@ -219,18 +226,43 @@ main {
 }
 
 .resume_pg {
-    .resume_opt {
-        @include flex_box();
+
+    #resume_opt {
+        display: flex ;
         width: fit-content;
         #resume_opt {
             color: white;
         }
     }
-    article {
-        @include flex_box();
-        width: 500px;
-        height: 650px;
+    
+    .resume_cont{
+
+        width: fit-content;
+        margin: auto;
+
+        .resume_viewer{ 
+
+            @include flex_box();
+            width: fit-content;
+            height: fit-content;
+
+            #dir_button{
+
+                #left{
+                    transform: translate(0px, 300px);
+                }
+                #right {
+                    transform: translate(0px, 300px);
+                }
+            }
+            #resume_viewer {
+                @include flex_box();
+                width: 500px;
+                height: 650px;
+            }
+        }
     }
+
 }
 
 .contact_me_pg {
@@ -248,4 +280,5 @@ main {
             display: block;
         }
     }
+    
 }
