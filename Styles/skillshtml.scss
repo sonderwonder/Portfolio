@@ -1,7 +1,7 @@
 $h_font: 'Poppins', sans-serif;
 $p_font: 'Raleway', sans-serif;
 $card_color: #bbafa0;
-$card_shadow: #e5e2dd;
+$card_shadow: #9a8c82;
 
 @mixin headings {
     font-family: $h_font;
@@ -19,8 +19,67 @@ $card_shadow: #e5e2dd;
     border: 1px solid #e5e2dd;
 }
 
+@media screen and ( max-width: 650px ) {
+    .small-menu { 
+        display: flex; 
+        max-width: width 650px;
+        justify-content: flex-end;
+        position: sticky;
+        top: 0;
+        padding: 14px 25px;
+        z-index: 2;
+        border: none;
+        border-radius: 8px;
+        background-image: linear-gradient(#9a8c82, #00000000);
+        opacity: 0.7 ;
+        
+    }
+    .large-menu { display: none; }
+}
+
+@media screen and ( min-width: 651px ) {
+
+    .small-menu { display:none; }
+    
+    .large-menu { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: auto;
+        float: none;
+        position: sticky;
+        border-radius: 8px;
+        background-image: linear-gradient(#9a8c82, #00000000);
+        height: 40px;
+        opacity: 0.9;
+        top: 0;
+        padding: 20px;
+        z-index: 2;
+    
+
+        #topbot {
+            #home {
+                transform: translate(-10px, 0px)
+            }
+            #bottom {
+                transform: translate(10px, 0px)
+            }
+        }
+
+        #pg {
+            @include headings();
+            text-decoration: none;
+            padding: 7px;
+            color: #6B6F76;
+
+
+        }
+    }
+}
+
 body {
-    background-image: url('Portfolio Webpage File/Assests/img/The_Creation_of_Adam.jpg');
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -35,15 +94,44 @@ body {
         z-index: -1;
     }
 
-    aside {
+    .pg_cont {
         display: flex;
-        float: left; 
-        width: 20%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        aside {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+            height: fit-content;
+            min-width: 127px;
+           
+            a {
+                img {
+                    display: inline;
+                }
+            }
+            h1 {
+                @include headings();
+                text-align: center;
+            }
 
-    }
-    article {
-        display: flex;
-        float: left; 
-        width: 20%;
+        }
+        article {
+            display: inline-flex;
+            #skill_desc {
+                min-width: 400px;
+                margin: 0px 10px;
+                border: none;
+                border-radius: 8px;
+                background-color: $card_color;
+                opacity: 0.7;
+                box-shadow: 5px 10px 18px $card_shadow;
+                p {
+                    @include paragraphs();
+                    padding: 15px;
+                }
+            }
+        }
     }
 }

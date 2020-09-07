@@ -11,18 +11,49 @@
     <link rel="stylesheet" href="skillshtml.css">
 </head>
 <body>
+
+    <!--Nav Bar-->
+    <div class="small-menu">
+        <form>
+        <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+            <option value="#about_me_anc">About Me</option>
+            <option value="#socials_anc">Socials</option>
+            <option value="#projects_anc">Projects</option>
+            <option value="#skills_anc">Skills</option>
+            <option value="#resume_anc">Resume</option>
+            <option value="#contact_me_anc">Contact Me</option>
+        </select>
+        <form>
+    </div>
+    <nav class="large-menu">
+        
+        <!--<a id="topbot"><img id="home" width="37" src="./Assests/icon/nav_top.svg"/></a>-->
+        <a id="pg" href="#about_me_anc">About Me</a> 
+        <a id="pg" href="#socials_anc">Socials</a> 
+        <a id="pg" href="#projects_anc">Projects</a> 
+        <a id="pg" href="#skills_anc">Skills</a>
+        <a id="pg" href="#resume_anc">Resume</a>
+        <a id="pg" href="#contact_me_anc">Contact Me</a>
+        <!--<a id="topbot"><img id="bottom" width="37" src="./Assests/icon/nav_bottom.svg"/></a>-->
+    </nav>
+
     <div class="filter">
 
     </div>
 
-    <aside>
-        <a><img width="100" src="../Assests/icon/html-5.svg"></a>
-        <h1>HTML</h1>
-    </aside>
+    <main class="pg_cont">
 
-    <article>
-
-    </article>
+        <aside>
+            <a><img width="100" src="html-5.svg"></a>
+            <h1>HTML</h1>
+        </aside>
     
+        <article>
+            <div id="skill_desc">
+                <p>n. the realization that each random passerby is living a life as vivid and complex as your own—populated with their own ambitions, friends, routines, worries and inherited craziness—an epic story that continues invisibly around you like an anthill sprawling deep underground, with elaborate passageways to thousands of other lives that you’ll never know existed, in which you might appear only once, as an extra sipping coffee in the background, as a blur of traffic passing on the highway, as a lighted window at dusk.</p>
+            </div>
+        </article>
+        
+    </main>
 </body>
 </html>
