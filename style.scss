@@ -148,7 +148,6 @@ main {
         @include paragraphs();
         color: #e5e2dd;
     }
-
 }
 
 .about_me_pg {
@@ -172,7 +171,7 @@ main {
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: center;
-        width: fit-content;
+        max-width: 900px;
         margin: auto;
     
         #sociallink_cont {
@@ -205,11 +204,15 @@ main {
             box-shadow: 5px 10px 18px $card_shadow;
             opacity: 0.7;
             margin: 10px;
-            width: 500px;
-            height: 600px;
-            
+            max-width: 500px;
+            max-height: 600px;
+            iframe { 
+                max-width: inherit;
+                max-height: inherit;
+                display: flex;
+            }
         }
-   }
+    }
 }
 
 .projects_pg {
@@ -257,8 +260,8 @@ main {
                 flex-wrap: wrap;
                 border: none;
                 max-width: 800px;
-                height: 650px;
-                justify-content: space-around;
+                height: fit-content;
+                justify-content: space-evenly;
                 align-items: center;
             
                 #project_card {
@@ -312,20 +315,19 @@ main {
                         img {
                             width: 30px;
                         }
-
                     }
-                    
                 }
             }
         }
     }
-
 }
 .skills_pg {
     
     #skills_icons {
     
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         padding: 10px;
         border: none;
         border-radius: 8px;
@@ -360,124 +362,125 @@ main {
         }
     }
 
-    .resume_cont{
 
-        width: fit-content;
+    .resume_viewer{ 
+
+        display: flex;
         margin: auto;
+        justify-content: center;
+        max-width: 900px; 
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+        
 
-        .resume_viewer{ 
+        /*#dir_button{
 
+            #left{
+                transform: translate(0px, 300px);
+            }
+            #right {
+                transform: translate(0px, 300px);
+            }
+        }*/
+        
+        #resume_viewer {
             @include flex_box();
             border: none;
-            width: fit-content;
-            height: fit-content;
-
-            /*#dir_button{
-
-                #left{
-                    transform: translate(0px, 300px);
-                }
-                #right {
-                    transform: translate(0px, 300px);
-                }
-            }*/
-            #resume_viewer {
-                @include flex_box();
-                border: none;
+            border-radius: 8px;
+            justify-content: stretch;
+            background-color: $card_color;
+            box-shadow: 5px 10px 18px $card_shadow;
+            opacity: 0.7;
+            margin: 10px;
+            width: 500px;
+            height: 650px;
+            max-width: 500px;
+            max-height: 600px;
+            min-width: 180px;
+            min-height: 200px;
+            iframe {
+                margin: auto;
+                border-style: none;
                 border-radius: 8px;
-                background-color: $card_color;
-                box-shadow: 5px 10px 18px $card_shadow;
-                opacity: 0.7;
-                margin: 10px;
-                width: 500px;
-                height: 650px;
-                z-index: 2;
-                iframe {
-                    border-style: none;
-                    border-radius: 8px;
-                    width: 600px;
-                    height: 650px;
+                width: inherit;
+                height: inherit;
+                min-width: 180px;
+                min-height: 200px;
+                display: flex;
                     
-                }
             }
         }
     }
-
 }
 
 .contact_me_pg {
 
     .contact_me_cont{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-        max-width: 1000px;;
+    
+        max-width: 900px;
         margin: 300px auto;
         
-
-
-
-        #submit_c {
+        form {
             display: flex;
-            flex-direction: column;
-            vertical-align: middle;
-            max-width: 500px;
-            color: white;
-            margin: auto;
-            input[type=submit] {
-                display: inline ;
-                text-rendering: white;
-                justify-content: center;
-                background-color: $card_color;
-                box-shadow: 5px 10px 18px $card_shadow;
-                margin: 10px;
-                border: none;
-                border-radius: 3px;
-                opacity: 0.7;
-            }
+            flex-wrap: wrap;
+            align-items: baseline;
 
-            label {
-                display: inline ;
-            
-                input[type=checkbox] {
+            #submit_c {
+                display: inline-flex;
+                align-items: center;
+                flex-direction: column;
+                max-width: 500px;
+                color: white;
+                margin: auto;
+                input[type=submit] {
                     display: inline ;
+                    text-rendering: white;
                     background-color: $card_color;
                     box-shadow: 5px 10px 18px $card_shadow;
-                    transform: translate(4px, 5px);
                     margin: 10px;
                     border: none;
                     border-radius: 3px;
                     opacity: 0.7;
                 }
-            }
 
-            label {
-                display: inline ;
+                label {
+                    display: inline ;
+                
+                    input[type=checkbox] {
+                        display: inline ;
+                        background-color: $card_color;
+                        box-shadow: 5px 10px 18px $card_shadow;
+                        margin: 10px;
+                        border: none;
+                        border-radius: 3px;
+                        opacity: 0.7;
+                    }
+                }
             }
-        }
-        #message_c {
-            display: flex;
-            margin: 0px 20px;
-            
-            #message {
-                height: 150px;
-                width: 340px;
-            }
-            input[type=text] {
-                @include paragraphs();
-                display: block;
-                background-color: $card_color;
-                box-shadow: 5px 10px 18px $card_shadow;
-                width: 340px;
-                padding-left: 5px;
-                margin: 10px;
-                border: none;
-                border-radius: 3px;
-                opacity: 0.7;
-                height: 20px;
+            #message_c {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                margin: auto;
+                #message {
+                    height: 150px;
+                    width: 340px;
+                }
+                input[type=text] {
+                    @include paragraphs();
+                    display: inline;
+                    background-color: $card_color;
+                    box-shadow: 5px 10px 18px $card_shadow;
+                    width: 340px;
+                    padding-left: 5px;
+                    margin: 10px;
+                    border: none;
+                    border-radius: 3px;
+                    opacity: 0.7;
+                    height: 20px;
+                }
             }
         }
     }
-    
 }
