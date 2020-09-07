@@ -1,0 +1,49 @@
+$h_font: 'Poppins', sans-serif;
+$p_font: 'Raleway', sans-serif;
+$card_color: #bbafa0;
+$card_shadow: #e5e2dd;
+
+@mixin headings {
+    font-family: $h_font;
+    color:  #927778;
+}
+
+@mixin paragraphs {
+    font-family: $p_font;
+    color: white;
+}
+
+@mixin flex_box {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 1px solid #e5e2dd;
+}
+
+body {
+    background-image: url('Portfolio Webpage File/Assests/img/The_Creation_of_Adam.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+
+    .filter{
+        background-color: #bbafa0;
+        opacity: 0.3;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        z-index: -1;
+    }
+
+    aside {
+        display: flex;
+        float: left; 
+        width: 20%;
+
+    }
+    article {
+        display: flex;
+        float: left; 
+        width: 20%;
+    }
+}

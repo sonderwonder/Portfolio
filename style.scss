@@ -6,7 +6,6 @@ $card_shadow: #9a8c82;
 @mixin headings {
     font-family: $h_font;
     color:  #927778;
-    margin-left: 20px;
 }
 
 @mixin paragraphs {
@@ -81,11 +80,12 @@ $card_shadow: #9a8c82;
 
 body {
 
-    background-image: url(./Assests/img/The_Creation_of_Adam.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     z-index: -2;
+
 
     .filter{
         background-color: #bbafa0;
@@ -138,6 +138,7 @@ body {
         h1 {
             @include headings();
             vertical-align: middle;
+            margin-left: 20px;
         }
 
         h3 {

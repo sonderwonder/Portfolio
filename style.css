@@ -40,12 +40,11 @@
     .large-menu #pg {
       font-family: "Poppins", sans-serif;
       color: #927778;
-      margin-left: 20px;
       text-decoration: none;
       padding: 7px;
       color: #6B6F76; } }
 body {
-  background-image: url(./Assests/img/The_Creation_of_Adam.jpg);
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -77,8 +76,7 @@ body {
         opacity: none; }
         body .home_pg #sonder #sonder_cont h2 {
           font-family: "Poppins", sans-serif;
-          color: #927778;
-          margin-left: 20px; }
+          color: #927778; }
         body .home_pg #sonder #sonder_cont p {
           font-family: "Raleway", sans-serif;
           color: white; }
@@ -92,17 +90,15 @@ body {
     body main h1 {
       font-family: "Poppins", sans-serif;
       color: #927778;
-      margin-left: 20px;
-      vertical-align: middle; }
+      vertical-align: middle;
+      margin-left: 20px; }
     body main h3 {
       font-family: "Poppins", sans-serif;
       color: #927778;
-      margin-left: 20px;
       vertical-align: middle; }
     body main h4 {
       font-family: "Poppins", sans-serif;
       color: #927778;
-      margin-left: 20px;
       vertical-align: middle;
       color: #6B6F76; }
     body main p {
