@@ -183,7 +183,7 @@ main {
             justify-content: space-around;
             align-items: center;
             max-width: 300px;
-            height: 150px;
+            height: fit-content;
             background-color: $card_color;
             opacity: 0.7;
             box-shadow: 5px 10px 18px $card_shadow;

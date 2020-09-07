@@ -127,7 +127,7 @@ main {
     justify-content: space-around;
     align-items: center;
     max-width: 300px;
-    height: 150px;
+    height: fit-content;
     background-color: #bbafa0;
     opacity: 0.7;
     box-shadow: 5px 10px 18px #9a8c82;
