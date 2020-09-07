@@ -444,74 +444,76 @@ body {
             
                 max-width: 900px;
                 margin: 300px auto;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
                 
-                form {
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: baseline;
+                
 
-                    #submit_c {
-                        display: inline-flex;
-                        align-items: center;
-                        flex-direction: column;
-                        max-width: 500px;
-                        color: white;
-                        margin: auto;
-                        input[type=submit] {
+                #submit_c {
+                    display: inline-flex;
+                    align-items: center;
+                    flex-direction: column;
+                    max-width: 500px;
+                    color: white;
+                    margin: auto;
+                    input[type=submit] {
+                        display: inline ;
+                        text-rendering: white;
+                        background-color: $card_color;
+                        box-shadow: 5px 10px 18px $card_shadow;
+                        margin: 10px;
+                        border: none;
+                        border-radius: 3px;
+                        opacity: 0.7;
+                    }
+
+                    label {
+                        display: inline ;
+                    
+                        input[type=checkbox] {
                             display: inline ;
-                            text-rendering: white;
                             background-color: $card_color;
                             box-shadow: 5px 10px 18px $card_shadow;
                             margin: 10px;
                             border: none;
                             border-radius: 3px;
                             opacity: 0.7;
-                        }
-
-                        label {
-                            display: inline ;
-                        
-                            input[type=checkbox] {
-                                display: inline ;
-                                background-color: $card_color;
-                                box-shadow: 5px 10px 18px $card_shadow;
-                                margin: 10px;
-                                border: none;
-                                border-radius: 3px;
-                                opacity: 0.7;
-                            }
                         }
                     }
-                    #message_c {
-                        display: inline-flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin: auto;
-                        #message {
-                            height: 150px;
-                            width: 340px;
-                            @include paragraphs();
-                            background-color: $card_color;
-                            box-shadow: 5px 10px 18px $card_shadow;
-                            padding-left: 5px;
-                            margin: 10px;
-                            border: none;
-                            border-radius: 3px;
-                            opacity: 0.7;
-                            
-                        }
-                        #info {
-                            @include paragraphs();
-                            background-color: $card_color;
-                            box-shadow: 5px 10px 18px $card_shadow;
-                            width: 340px;
-                            padding-left: 5px;
-                            margin: 10px;
-                            border: none;
-                            border-radius: 3px;
-                            opacity: 0.7;
-                            height: 20px;
-                        }
+                }
+
+                #message_c {
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: auto;
+                    #message {
+                        display: inline-block;
+                        height: 150px;
+                        width: 340px;
+                        @include paragraphs();
+                        background-color: $card_color;
+                        box-shadow: 5px 10px 18px $card_shadow;
+                        padding-left: 5px;
+                        margin: 10px;
+                        border: none;
+                        border-radius: 3px;
+                        opacity: 0.7;
+                        
+                    }
+                    #info {
+                        display: inline-block;
+                        @include paragraphs();
+                        background-color: $card_color;
+                        box-shadow: 5px 10px 18px $card_shadow;
+                        width: 340px;
+                        padding-left: 5px;
+                        margin: 10px;
+                        border: none;
+                        border-radius: 3px;
+                        opacity: 0.7;
+                        height: 20px;
                     }
                 }
             }
