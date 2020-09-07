@@ -151,18 +151,19 @@ main {
 
 .projects_pg #project_opt {
   display: flex;
-  width: fit-content; }
+  justify-content: flex-end;
+  margin: auto;
+  max-width: 800px;
+  padding-right: 60px; }
   .projects_pg #project_opt a {
-    margin: 6px; }
+    margin-left: 12px; }
     .projects_pg #project_opt a img {
       width: 30px; }
 .projects_pg .projects_cont {
   width: fit-content;
   margin: auto; }
   .projects_pg .projects_cont .project_viewer {
-    display: inline-flex;
-    flex-wrap: wrap;
-    border: 1px solid #e5e2dd;
+    display: flex;
     border: none;
     width: fit-content;
     height: fit-content; }
@@ -171,11 +172,10 @@ main {
     .projects_pg .projects_cont .project_viewer #dir_button #right {
       transform: translate(0px, 300px); }
     .projects_pg .projects_cont .project_viewer #projects_viewer {
-      display: inline-flex;
+      display: flex;
       flex-wrap: wrap;
-      border: 1px solid #e5e2dd;
       border: none;
-      width: 500px;
+      max-width: 800px;
       height: 650px;
       justify-content: space-around;
       align-items: center; }

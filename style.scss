@@ -216,11 +216,16 @@ main {
 
     #project_opt {
         display: flex ;
-        width: fit-content;
+        justify-content: flex-end;
+        margin: auto;
+        max-width: 800px;
+        padding-right: 60px ;
+        
         
         
         a {
-            margin: 6px;  
+            margin-left: 12px;  
+    
             img {
                 width: 30px;
             }
@@ -233,11 +238,10 @@ main {
         margin: auto;
 
         .project_viewer{
-            @include flex_box();
+            display: flex;
             border: none;
             width: fit-content;
             height: fit-content;
-            
 
             #dir_button{
 
@@ -249,9 +253,10 @@ main {
                 }
             }
             #projects_viewer {
-                @include flex_box();
+                display: flex;
+                flex-wrap: wrap;
                 border: none;
-                width: 500px;
+                max-width: 800px;
                 height: 650px;
                 justify-content: space-around;
                 align-items: center;
