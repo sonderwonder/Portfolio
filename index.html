@@ -28,20 +28,33 @@
                 <a href="https://www.dictionaryofobscuresorrows.com/post/23536922667/sonder">The Dictionary of Obscure Sorrows</a>
             </div>
         </div>
-</header>
+    </header>
 
     <br>
 
     <!--Nav Bar-->
-    <nav>
-        <a id="topbot"><img id="home" width="37" src="./Assests/icon/nav_top.svg"/></a>
+    <div class="small-menu">
+        <form>
+             <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+                 <option value="#about_me_anc">About Me</option>
+                 <option value="#socials_anc">Socials</option>
+                 <option value="#projects_anc">Projects</option>
+                 <option value="#skills_anc">Skills</option>
+                 <option value="#resume_anc">Resume</option>
+                 <option value="#contact_me_anc">Contact Me</option>
+             </select>
+        <form>
+    </div>
+    <nav class="large-menu">
+        
+        <!--<a id="topbot"><img id="home" width="37" src="./Assests/icon/nav_top.svg"/></a>-->
         <a id="pg" href="#about_me_anc">About Me</a> 
         <a id="pg" href="#socials_anc">Socials</a> 
         <a id="pg" href="#projects_anc">Projects</a> 
         <a id="pg" href="#skills_anc">Skills</a>
         <a id="pg" href="#resume_anc">Resume</a>
         <a id="pg" href="#contact_me_anc">Contact Me</a>
-        <a id="topbot"><img id="bottom" width="37" src="./Assests/icon/nav_bottom.svg"/></a>
+        <!--<a id="topbot"><img id="bottom" width="37" src="./Assests/icon/nav_bottom.svg"/></a>-->
     </nav>
 
     <!--Main Scroll Feed-->
@@ -278,9 +291,9 @@
                     </div>   
                     <div id="message_c">
                         
-                        <input type="text" name="email" placeholder="Email:">
+                        <input id="info" type="text" name="email" placeholder="Email:">
                         
-                        <input type="text" name="name" placeholder="Name:">
+                        <input id="info" type="text" name="name" placeholder="Name:">
                         
                         <input id="message" type="text" name="message" placeholder="Message:">
 
