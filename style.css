@@ -37,7 +37,7 @@ nav {
     color: #927778;
     text-decoration: none;
     padding: 7px;
-    color: #7E838B; }
+    color: #6B6F76; }
 
 .home_pg {
   margin: auto;
@@ -80,14 +80,15 @@ main {
   main h4 {
     font-family: "Poppins", sans-serif;
     color: #927778;
-    vertical-align: middle; }
+    vertical-align: middle;
+    color: #6B6F76; }
   main p {
     font-family: "Raleway", sans-serif;
     color: white;
     vertical-align: middle; }
   main hr {
     margin-top: 50px;
-    border: 2px solid #BBAFA0;
+    border: 2px solid #6B6F76;
     border-radius: 2px;
     opacity: 0.5;
     box-shadow: 5px 10px 18px #9a8c82; }
@@ -237,13 +238,14 @@ main {
 
 .resume_pg #resume_opt {
   display: flex;
-  width: fit-content;
-  float: right;
-  transform: translate(-129px, 0px); }
+  max-width: 500px;
+  margin: auto;
+  justify-content: flex-end; }
   .resume_pg #resume_opt a {
     text-decoration: none;
     color: white;
-    padding: 6px; }
+    padding-left: 10px;
+    padding-right: 0px; }
 .resume_pg .resume_cont {
   width: fit-content;
   margin: auto; }
@@ -253,15 +255,17 @@ main {
     border: 1px solid #e5e2dd;
     border: none;
     width: fit-content;
-    height: fit-content; }
-    .resume_pg .resume_cont .resume_viewer #dir_button #left {
-      transform: translate(0px, 300px); }
-    .resume_pg .resume_cont .resume_viewer #dir_button #right {
-      transform: translate(0px, 300px); }
+    height: fit-content;
+            /*#dir_button{
+
+                #left{
+                    transform: translate(0px, 300px);
+                }
+                #right {
+                    transform: translate(0px, 300px);
+                }
+            }*/ }
     .resume_pg .resume_cont .resume_viewer #resume_viewer {
-      display: inline-flex;
-      flex-wrap: wrap;
-      border: 1px solid #e5e2dd;
       display: inline-flex;
       flex-wrap: wrap;
       border: 1px solid #e5e2dd;
@@ -272,7 +276,13 @@ main {
       opacity: 0.7;
       margin: 10px;
       width: 500px;
-      height: 650px; }
+      height: 650px;
+      z-index: 2; }
+      .resume_pg .resume_cont .resume_viewer #resume_viewer iframe {
+        border-style: none;
+        border-radius: 8px;
+        width: 600px;
+        height: 650px; }
 
 .contact_me_pg .contact_me_cont {
   display: flex;
@@ -281,7 +291,7 @@ main {
   max-width: 1000px;
   margin: 300px auto; }
   .contact_me_pg .contact_me_cont #submit_c {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     vertical-align: middle;
     max-width: 500px;
@@ -311,7 +321,7 @@ main {
     .contact_me_pg .contact_me_cont #submit_c label {
       display: inline; }
   .contact_me_pg .contact_me_cont #message_c {
-    display: inline-block;
+    display: flex;
     margin: 0px 20px; }
     .contact_me_pg .contact_me_cont #message_c #message {
       height: 150px;
