@@ -1,3 +1,50 @@
+.shtml {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -2; }
+  .shtml .filter {
+    background-color: #bbafa0;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  .shtml .pg_cont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; }
+    .shtml .pg_cont aside {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20%;
+      height: fit-content;
+      min-width: 127px; }
+      .shtml .pg_cont aside a img {
+        display: inline; }
+      .shtml .pg_cont aside h1 {
+        font-family: "Poppins", sans-serif;
+        color: #927778;
+        text-align: center; }
+    .shtml .pg_cont article {
+      display: inline-flex; }
+      .shtml .pg_cont article #skill_desc {
+        min-width: 400px;
+        margin: 0px 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #bbafa0;
+        opacity: 0.7;
+        box-shadow: 5px 10px 18px #9a8c82; }
+        .shtml .pg_cont article #skill_desc p {
+          font-family: "Raleway", sans-serif;
+          color: white;
+          padding: 15px; }
+
 @media screen and (max-width: 650px) {
   .small-menu {
     display: flex;
@@ -43,13 +90,13 @@
       text-decoration: none;
       padding: 7px;
       color: #6B6F76; } }
-body {
+.main {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   z-index: -2; }
-  body .filter {
+  .main .filter {
     background-color: #bbafa0;
     opacity: 0.3;
     position: fixed;
@@ -58,13 +105,13 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1; }
-  body .home_pg {
+  .main .home_pg {
     margin: auto;
     margin-top: 300px;
     margin-bottom: 300px;
     max-width: 800px;
     text-align: right; }
-    body .home_pg #sonder {
+    .main .home_pg #sonder {
       padding: 10px;
       padding-bottom: 30px;
       border: none;
@@ -72,69 +119,69 @@ body {
       background-color: #bbafa0;
       opacity: 0.7;
       box-shadow: 5px 10px 18px #9a8c82; }
-      body .home_pg #sonder #sonder_cont {
+      .main .home_pg #sonder #sonder_cont {
         opacity: none; }
-        body .home_pg #sonder #sonder_cont h2 {
+        .main .home_pg #sonder #sonder_cont h2 {
           font-family: "Poppins", sans-serif;
           color: #927778; }
-        body .home_pg #sonder #sonder_cont p {
+        .main .home_pg #sonder #sonder_cont p {
           font-family: "Raleway", sans-serif;
           color: white; }
-        body .home_pg #sonder #sonder_cont a {
+        .main .home_pg #sonder #sonder_cont a {
           text-decoration: none;
           font-family: "Raleway", sans-serif;
           color: white; }
-  body main {
+  .main main {
     max-width: 900px;
     margin: auto; }
-    body main h1 {
+    .main main h1 {
       font-family: "Poppins", sans-serif;
       color: #927778;
       vertical-align: middle;
       margin-left: 20px; }
-    body main h3 {
+    .main main h3 {
       font-family: "Poppins", sans-serif;
       color: #927778;
       vertical-align: middle; }
-    body main h4 {
+    .main main h4 {
       font-family: "Poppins", sans-serif;
       color: #927778;
       vertical-align: middle;
       color: #6B6F76; }
-    body main p {
+    .main main p {
       font-family: "Raleway", sans-serif;
       color: white;
       vertical-align: middle; }
-    body main hr {
+    .main main hr {
       margin-top: 50px;
       border: 2px solid #6B6F76;
       border-radius: 2px;
       opacity: 0.5;
       box-shadow: 5px 10px 18px #9a8c82; }
-    body main a {
+    .main main a {
       font-family: "Raleway", sans-serif;
       color: white; }
-    body main label {
+    .main main label {
       font-family: "Raleway", sans-serif;
       color: white;
       color: #e5e2dd; }
-    body main .about_me_pg #about_box {
+    .main main .about_me_pg #about_box {
       padding: 10px;
       border: none;
       border-radius: 8px;
       background-color: #bbafa0;
       opacity: 0.7;
       box-shadow: 5px 10px 18px #9a8c82; }
-      body main .about_me_pg #about_box p {
+      .main main .about_me_pg #about_box p {
         padding: 15px; }
-    body main .socials_pg #social_cont {
+    .main main .socials_pg #social_cont {
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
       justify-content: center;
       max-width: 900px;
       margin: auto; }
-      body main .socials_pg #social_cont #sociallink_cont {
+      .main main .socials_pg #social_cont #sociallink_cont {
         display: inline-flex;
         flex-wrap: wrap;
         border: 1px solid #e5e2dd;
@@ -149,11 +196,11 @@ body {
         opacity: 0.7;
         box-shadow: 5px 10px 18px #9a8c82;
         margin: 10px; }
-        body main .socials_pg #social_cont #sociallink_cont a {
+        .main main .socials_pg #social_cont #sociallink_cont a {
           margin: 6px; }
-          body main .socials_pg #social_cont #sociallink_cont a img {
+          .main main .socials_pg #social_cont #sociallink_cont a img {
             max-width: 60px; }
-      body main .socials_pg #social_cont aside {
+      .main main .socials_pg #social_cont aside {
         display: inline-flex;
         flex-wrap: wrap;
         border: 1px solid #e5e2dd;
@@ -165,33 +212,33 @@ body {
         margin: 10px;
         max-width: 500px;
         max-height: 600px; }
-        body main .socials_pg #social_cont aside iframe {
+        .main main .socials_pg #social_cont aside iframe {
           max-width: inherit;
           max-height: inherit;
           display: flex; }
-    body main .projects_pg #project_opt {
+    .main main .projects_pg #project_opt {
       display: flex;
       justify-content: flex-end;
       margin: auto;
       max-width: 800px;
       padding-right: 60px; }
-      body main .projects_pg #project_opt a {
+      .main main .projects_pg #project_opt a {
         margin-left: 12px; }
-        body main .projects_pg #project_opt a img {
+        .main main .projects_pg #project_opt a img {
           width: 30px; }
-    body main .projects_pg .projects_cont {
+    .main main .projects_pg .projects_cont {
       width: fit-content;
       margin: auto; }
-      body main .projects_pg .projects_cont .project_viewer {
+      .main main .projects_pg .projects_cont .project_viewer {
         display: flex;
         border: none;
         width: fit-content;
         height: fit-content; }
-        body main .projects_pg .projects_cont .project_viewer #dir_button #left {
+        .main main .projects_pg .projects_cont .project_viewer #dir_button #left {
           transform: translate(0px, 300px); }
-        body main .projects_pg .projects_cont .project_viewer #dir_button #right {
+        .main main .projects_pg .projects_cont .project_viewer #dir_button #right {
           transform: translate(0px, 300px); }
-        body main .projects_pg .projects_cont .project_viewer #projects_viewer {
+        .main main .projects_pg .projects_cont .project_viewer #projects_viewer {
           display: flex;
           flex-wrap: wrap;
           border: none;
@@ -199,7 +246,7 @@ body {
           height: fit-content;
           justify-content: space-evenly;
           align-items: center; }
-          body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_card {
+          .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_card {
             border: 1px none;
             background-color: #bbafa0;
             opacity: 0.7;
@@ -209,12 +256,12 @@ body {
             margin: 10px 5px;
             border-radius: 8px;
             box-shadow: 5px 10px 18px #9a8c82; }
-            body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_card a {
+            .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_card a {
               padding: 6px;
               float: right; }
-              body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_card a img {
+              .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_card a img {
                 width: 30px; }
-          body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing {
+          .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing {
             background-color: #bbafa0;
             opacity: 0.7;
             border-radius: 8px;
@@ -222,26 +269,26 @@ body {
             width: 480px;
             margin: auto;
             padding: auto; }
-            body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing h3 {
+            .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing h3 {
               display: inline;
               padding: 6px; }
-            body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing h4 {
+            .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing h4 {
               display: inline;
               padding: 6px; }
-            body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing h3 {
+            .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing h3 {
               display: inline;
               padding: 6px; }
-            body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing p {
+            .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing p {
               display: inline;
               padding: 6px; }
-            body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing a {
+            .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing a {
               display: inline;
               padding: 6px;
               float: right;
               vertical-align: middle; }
-              body main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing a img {
+              .main main .projects_pg .projects_cont .project_viewer #projects_viewer #project_listing a img {
                 width: 30px; }
-    body main .skills_pg #skills_icons {
+    .main main .skills_pg #skills_icons {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -254,19 +301,19 @@ body {
       margin: auto;
       margin-bottom: 70px;
       box-shadow: 5px 10px 18px #9a8c82; }
-      body main .skills_pg #skills_icons a {
+      .main main .skills_pg #skills_icons a {
         margin: 20px; }
-    body main .resume_pg #resume_opt {
+    .main main .resume_pg #resume_opt {
       display: flex;
       max-width: 500px;
       margin: auto;
       justify-content: flex-end; }
-      body main .resume_pg #resume_opt a {
+      .main main .resume_pg #resume_opt a {
         text-decoration: none;
         color: white;
         padding-left: 10px;
         padding-right: 0px; }
-    body main .resume_pg .resume_viewer {
+    .main main .resume_pg .resume_viewer {
       display: flex;
       margin: auto;
       justify-content: center;
@@ -282,7 +329,7 @@ body {
                         transform: translate(0px, 300px);
                     }
                 }*/ }
-      body main .resume_pg .resume_viewer #resume_viewer {
+      .main main .resume_pg .resume_viewer #resume_viewer {
         display: inline-flex;
         flex-wrap: wrap;
         border: 1px solid #e5e2dd;
@@ -299,7 +346,7 @@ body {
         max-height: 600px;
         min-width: 180px;
         min-height: 200px; }
-        body main .resume_pg .resume_viewer #resume_viewer iframe {
+        .main main .resume_pg .resume_viewer #resume_viewer iframe {
           margin: auto;
           border-style: none;
           border-radius: 8px;
@@ -308,20 +355,20 @@ body {
           min-width: 180px;
           min-height: 200px;
           display: flex; }
-    body main .contact_me_pg .contact_me_cont {
+    .main main .contact_me_pg .contact_me_cont {
       max-width: 900px;
       margin: 300px auto;
       display: flex;
       flex-wrap: wrap;
       align-items: baseline; }
-      body main .contact_me_pg .contact_me_cont #submit_c {
+      .main main .contact_me_pg .contact_me_cont #submit_c {
         display: inline-flex;
         align-items: center;
         flex-direction: column;
         max-width: 500px;
         color: white;
         margin: auto; }
-        body main .contact_me_pg .contact_me_cont #submit_c input[type=submit] {
+        .main main .contact_me_pg .contact_me_cont #submit_c input[type=submit] {
           display: inline;
           text-rendering: white;
           background-color: #bbafa0;
@@ -330,9 +377,9 @@ body {
           border: none;
           border-radius: 3px;
           opacity: 0.7; }
-        body main .contact_me_pg .contact_me_cont #submit_c label {
+        .main main .contact_me_pg .contact_me_cont #submit_c label {
           display: inline; }
-          body main .contact_me_pg .contact_me_cont #submit_c label input[type=checkbox] {
+          .main main .contact_me_pg .contact_me_cont #submit_c label input[type=checkbox] {
             display: inline;
             background-color: #bbafa0;
             box-shadow: 5px 10px 18px #9a8c82;
@@ -340,12 +387,12 @@ body {
             border: none;
             border-radius: 3px;
             opacity: 0.7; }
-      body main .contact_me_pg .contact_me_cont #message_c {
+      .main main .contact_me_pg .contact_me_cont #message_c {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
         margin: auto; }
-        body main .contact_me_pg .contact_me_cont #message_c #message {
+        .main main .contact_me_pg .contact_me_cont #message_c #message {
           display: inline-block;
           height: 150px;
           width: 340px;
@@ -358,7 +405,7 @@ body {
           border: none;
           border-radius: 3px;
           opacity: 0.7; }
-        body main .contact_me_pg .contact_me_cont #message_c #info {
+        .main main .contact_me_pg .contact_me_cont #message_c #info {
           display: inline-block;
           font-family: "Raleway", sans-serif;
           color: white;

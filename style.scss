@@ -1,3 +1,5 @@
+@import "./pages/Styles/skillshtml";
+
 $h_font: 'Poppins', sans-serif;
 $p_font: 'Raleway', sans-serif;
 $card_color: #bbafa0;
@@ -78,7 +80,7 @@ $card_shadow: #9a8c82;
     }
 }
 
-body {
+.main {
 
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg);
     background-repeat: no-repeat;

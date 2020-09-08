@@ -19,66 +19,7 @@ $card_shadow: #9a8c82;
     border: 1px solid #e5e2dd;
 }
 
-@media screen and ( max-width: 650px ) {
-    .small-menu { 
-        display: flex; 
-        max-width: width 650px;
-        justify-content: flex-end;
-        position: sticky;
-        top: 0;
-        padding: 14px 25px;
-        z-index: 2;
-        border: none;
-        border-radius: 8px;
-        background-image: linear-gradient(#9a8c82, #00000000);
-        opacity: 0.7 ;
-        
-    }
-    .large-menu { display: none; }
-}
-
-@media screen and ( min-width: 651px ) {
-
-    .small-menu { display:none; }
-    
-    .large-menu { 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: auto;
-        float: none;
-        position: sticky;
-        border-radius: 8px;
-        background-image: linear-gradient(#9a8c82, #00000000);
-        height: 40px;
-        opacity: 0.9;
-        top: 0;
-        padding: 20px;
-        z-index: 2;
-    
-
-        #topbot {
-            #home {
-                transform: translate(-10px, 0px)
-            }
-            #bottom {
-                transform: translate(10px, 0px)
-            }
-        }
-
-        #pg {
-            @include headings();
-            text-decoration: none;
-            padding: 7px;
-            color: #6B6F76;
-
-
-        }
-    }
-}
-
-body {
+.shtml {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
