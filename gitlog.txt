@@ -1,0 +1,306 @@
+commit 1f617a0090e860f49b6f7e76430e09e3c523604a
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Wed Sep 9 00:14:56 2020 +1000
+
+    Updated README.md
+
+commit 095ba51e3dc29abf3fdbacce7a2827aec7ca9d5e
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 23:25:54 2020 +1000
+
+    Web portfolio completed for submission
+
+commit 47069aae087caba2c2eb86de33a4f68de5aafac5
+Merge: 09de5e0 87c4995
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 23:03:37 2020 +1000
+
+    i dont know whats happening
+
+commit 09de5e0cda9f99b8e3c1c9c1f15f93ac23440f81
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 22:58:24 2020 +1000
+
+    Added subsource integrity
+
+commit 87c4995a044acdac4e7b953da1052415ce098131
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 22:05:50 2020 +1000
+
+    Delete CNAME
+
+commit 357e958ccd60a4a3c3c46507a5b99f142b67fd1c
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 22:00:39 2020 +1000
+
+    Create CNAME
+
+commit 56ee36cbfd5f93e99559fa4bd9d4ef57d3e4d167
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 21:32:24 2020 +1000
+
+    Formatted prject cards with flex. Added imgs to project cards.
+
+commit 5235f1c47c2a1dd0459768d78c546cb954eb8197
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 20:30:58 2020 +1000
+
+    Added proper content to about me pg. Made skill paragraphs responsive.
+
+commit 2cab6337ea962b6f8ddf201ad60df5c3708dfe88
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 20:03:35 2020 +1000
+
+    Added all skill pgs and links from the main pg
+
+commit f70e5628d7284c34886020b0a5c68dc5ee0bce26
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 19:42:47 2020 +1000
+
+    Made links on external skills pag link back to main pg
+
+commit d07b491f894f0decd0a8dd7f132a36d5213fb6ef
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 19:23:15 2020 +1000
+
+     Linked hitml skills to main pg. Linked skillshtml.scss to main style.scss. Made sure al the links and assests were functioning as the should. Removed repeatead navbar css from skills html.scss.
+
+commit 482a26ebacd88593fe68535a4851e6cc7ec92b54
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 08:01:36 2020 +1000
+
+    Created skillshtml and skillshtml_css and formatted and styled to a basic standar.
+
+commit 0bd4f0fdd059312d08a8ccfdc624ac26bdb95f24
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 06:03:42 2020 +1000
+
+    Changed background img to a web url
+
+commit aaae3900252496dd295d53abc0b951faeabb27d4
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 04:49:56 2020 +1000
+
+    Fixed form styling issue. Still need to make form more responsive.
+
+commit f84fbde8050bfd346acac9b9353f26bf8943a88d
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 04:33:31 2020 +1000
+
+    Made nav bar dynamic. commit before messing with contact me pg.
+
+commit db4c64dc9a4acc83a2b29c5f722b877b71ebd105
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 01:30:59 2020 +1000
+
+    commit after restore navbar fail
+
+commit 1c3ef316164cadc93534ceeab8753aa50dd229a8
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 8 01:03:12 2020 +1000
+
+    MAde conact pg responsive and linked to form spree. Took away nav bar to begin working on responsive option.
+
+commit f3f4bfa330ea26e69f13f62e480477f3690f9d91
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Mon Sep 7 18:04:27 2020 +1000
+
+    Linked to socials in sociallink cont. commented out follow buttons until i can work it out.
+
+commit ece4483af0cc1b5bcdfd25c5d42b8edf1840ab30
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Mon Sep 7 17:11:07 2020 +1000
+
+    Made projects page responsive and added two more projects cards. (need to make it have a page display so that the cards dont take up extra y depth)
+
+commit 1d89131897df67d8489ec81313c3cfc5b7c57224
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Mon Sep 7 16:09:57 2020 +1000
+
+    embedded resume and attached full preview link. Still need to work outdownload. Reformatted contact page to begin making it responsive.
+
+commit 19b9e49721b065fd155b7169ef3c3464cfccdb38
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Mon Sep 7 05:05:16 2020 +1000
+
+    Worked on whole site styling. Gave nav bar a background. Fixed issue with filter. Formatted contact further. Picked colour options for site.
+
+commit a2f520d528c0e99d0cd18603f50e282ca84a76c0
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Sun Sep 6 21:34:51 2020 +1000
+
+    Worked across site styling. Applied colors to elements and applied background filter
+
+commit c1e03d85cf776588e023113e0efb98ee237f6875
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Sun Sep 6 17:47:17 2020 +1000
+
+    Fixed nav bar icon offset
+
+commit 9044fdb603ffe17d90571657915fc81b7ae1f80a
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Sun Sep 6 17:38:23 2020 +1000
+
+    Styled contact me and put columns into flex box cont
+
+commit 37daed2c787068f253991e647f81cee4651c36e8
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Sun Sep 6 17:08:07 2020 +1000
+
+    Brought projects and resume viewers formatting inline with each other.
+
+commit a28384053d5fbba9322763de21ddd8ce58075ea8
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Sun Sep 6 15:51:04 2020 +1000
+
+    Styled and formatted Socials and Projects pgs. Put page content in flexboxes.
+
+commit 84bf681f0fee1760c2c80529fd03ad61d493d00a
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Sun Sep 6 13:36:04 2020 +1000
+
+    MAde header pg and about me pg transparent.
+
+commit 74ee080f7e3a7ec1306e3f3d1afd626ed6e60858
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Fri Sep 4 02:37:33 2020 +1000
+
+    Centered landing pg seperating it from main and hiding nav bar from landing area.
+
+commit 379a6d70ed9043e1823f389ecfd0bd9db6012e97
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Fri Sep 4 01:59:32 2020 +1000
+
+    Centered site content w/ margin auto. Styled the nav bar and made it sticky.
+
+commit 91695003719e773796b1e5950a99ed405a2b0c96
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Thu Sep 3 20:40:34 2020 +1000
+
+    Wprked on contact_me_pg. created divisions for submit and message sections. Applided basic styling in css.
+
+commit d230bb4d081807c34ec0b99d7d4471eb4df6ca1a
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Thu Sep 3 20:23:25 2020 +1000
+
+    Worked on Resume_pg sectioned out elements and applied relevant SVGs.
+
+commit 15c9ad1bdf4141b6be1f3dd426073d00751c4edf
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Thu Sep 3 20:09:47 2020 +1000
+
+     Worked on Skills_pg. Added relevant SVGs to icon dir and edited. Basic formatting of skills page and tooltips commented out for now.
+
+commit e2aa25933e9bf66c94f7bdbbdf677fb4248d7ca9
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Thu Sep 3 19:28:59 2020 +1000
+
+    Worked on projects_pg. applied basic segmentation of elements. Created basic grid and list project elements. Added and formated relevent SVGs.
+
+commit 938873485f6c05c1562c4605869c4fa152568a3e
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Thu Sep 3 18:44:01 2020 +1000
+
+    Added social media outline box
+
+commit 8fccf430a9cfb80b26ff4c7a96cb00aafbb49037
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Thu Sep 3 18:31:13 2020 +1000
+
+    Worked on sociallink_cont. Made cont into flexbox and  applied SVGs to <a> tags and saved in the icon directory. Made each SVG fill=white in SVG files
+
+commit b054cdc254d3ece57b3ec8e36cec290de3f046fa
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Thu Sep 3 15:48:44 2020 +1000
+
+    Applied basic font and colour styling to Home_pg in scss
+
+commit b53fc394ca392e375b7458cb16905523b7a18e71
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Thu Sep 3 15:35:13 2020 +1000
+
+    Added link tags for fonts and css in index.html. Implemented scss file and checked to see if it was operating smoothly with success. Basic css styling added to headings
+
+commit 48c7c058414fcac00d8c68f2986b6dd7f69f60ba
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Wed Sep 2 03:14:13 2020 +1000
+
+     Updated README.md and began filling out info
+
+commit ac0675c82f131159c7606282eca32d5de04a8d13
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Wed Sep 2 02:50:53 2020 +1000
+
+    Create README.md
+
+commit 9138bf18ededb1b64a3852d5081de5c08aea35f1
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 23:58:35 2020 +1000
+
+    Draft coded Contact Me pg Added tool tip and full email form. HTML file full drafted with basic format.
+
+commit 7d3def3e8188931a49cef66cc0a9b67b3afa8fca
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 23:43:11 2020 +1000
+
+    DRaft coded Resume page. Added resume opt buttons and resume veiwer with directional buttons
+
+commit f4ddf1708bce091d539766a9f04b04d98629d93b
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 23:34:06 2020 +1000
+
+     Draft coded Skills page. adding icons place holders and tooltip/pop up format code.
+
+commit c07d6d55325a873f36bff516ff3e330316f99f92
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 19:46:17 2020 +1000
+
+    Draft coded projects page. Formatted index html further for ledigbility. Made header div . home_pg
+
+commit 37259eaa2481b0c5470717dbbfa3ebe82b31870c
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 19:17:34 2020 +1000
+
+    Draft coded socials page, about me and socials now both draft coded.
+
+commit d26f7d93f4d91f3bbff07818aedc6b97f48daf8d
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 15:54:42 2020 +1000
+
+    Added Header container for landing page and added sonder heading, def., link and br. Added place holder home/bottom buttons to nav bar.
+
+commit 9191a24d48e2459bb3fc81df692234a1ad17d750
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 15:39:21 2020 +1000
+
+    Made background image staionary and flexible to screen resizing.
+
+commit a4e8170952343a0480a0b17a76e3e4b67f4c047f
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 15:33:26 2020 +1000
+
+    Created file structue to include Assets and Styles Directories and created style.css. Added background image to assets and coded its addition to index.html.
+
+commit 808f543ba6240e9c021e27570ea76dce9ffd2a2b
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 15:22:05 2020 +1000
+
+     Created <main> indentation to parent page divisions and gave each page division class identifiers and <hr> breaks where necessary.
+
+commit 13e58518db9b32bc84c9f5334120268f1d77a588
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 15:01:29 2020 +1000
+
+    Added Headings and linked nav bar buttons to their relevant page division headings.
+
+commit b92e14d1c9d8b07394db0601f3074f232d52d507
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 14:43:34 2020 +1000
+
+    Added nav bar component to appear on the site. Created non visible Page anchors and divisions in index.html
+
+commit 1fcbed9fdd4ea2f68f10e5d339083035b67ad529
+Author: sonderwonder <59288657+sonderwonder@users.noreply.github.com>
+Date:   Tue Sep 1 13:42:51 2020 +1000
+
+    Initial commit with HTML file and basic structure layout only in index.html
